@@ -3,32 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+
 </head>
 <body>
+
+    <!-- Navbar ---------------------------->
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
+        <nav class="navbar">
+            <div class="logo">MyPortfolio</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
+
+            <div class="hamburger" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
         </nav>
     </header>
+    
 
-    <main>
-        <section id="home">
-            <h1>Hello, I'm [Your Name]</h1>
-            <p>I'm a web developer and machine learning enthusiast.</p>
-        </section>
-    </main>
+    <!-- Sections -->
+    <!-- <section id="home">
+        <h1>Home</h1>
+        <p>Welcome to my portfolio website!</p>
+    </section> -->
 
-    <footer>
-        <p>&copy; 2025 [Your Name]. All rights reserved.</p>
-    </footer>
+<!-- -------------------------------------------------------------- -->
 
-    <script src="js/script.js"></script>
+    <section id="about">
+
+        <div id="particles-js"></div>
+
+        <div class="about-content">
+            <div class="image-container">
+                <img src="images/image1.png" alt="Profile Image" class="about-image">
+                <div class="overlay">
+                    <div class="overlay-text">
+                        <p>Machine Learning and Artificial Intelligence Enthusiast</p>
+                        <p>Web Developer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-content">
+                <h2>About Me</h2>
+                <p>I'm passionate about web development and building AI-powered solutions. My journey in technology has been focused on creating innovative solutions using machine learning, AI, and web technologies. Always eager to learn and grow in the tech field.</p>
+            </div>
+        </div>
+    </section>
+    
+<!-- ---------------------------------------------------------------------- -->
+    <section id="skills" class="skills-section">
+        <h2>Skills</h2>
+        <div class="skills-container">
+          <div class="skills-category">
+            <h3>Machine Learning & AI</h3>
+            <ul>
+              <li><strong>Programming Languages:</strong> Python, R, MATLAB</li>
+              <li><strong>Machine Learning Frameworks:</strong> Scikit-learn, TensorFlow, Keras, PyTorch</li>
+              <li><strong>Deep Learning Techniques:</strong> CNN, RNN, GANs, Transformers</li>
+              <li><strong>Data Manipulation & Analysis:</strong> Pandas, NumPy, Matplotlib, Seaborn</li>
+              <li><strong>Natural Language Processing (NLP):</strong> NLTK, spaCy, Hugging Face</li>
+              <li><strong>Big Data Tools:</strong> Apache Spark, Hadoop</li>
+              <li><strong>Projects:</strong> 
+                  <ul>
+                      <li>Stock Price Prediction</li>
+                      <li>Handwritten Digit Recognition</li>
+                      <li>Movie Recommendation System</li>
+                  </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="skills-category">
+            <h3>Web Development</h3>
+            <ul>
+              <li><strong>Frontend Development:</strong> HTML, CSS, JavaScript, React.js, Bootstrap, Tailwind CSS</li>
+              <li><strong>Backend Development:</strong> Node.js, Express.js, Django, Flask</li>
+              <li><strong>Database Management:</strong> MongoDB, MySQL, PostgreSQL</li>
+              <li><strong>Version Control:</strong> Git, GitHub</li>
+              <li><strong>APIs:</strong> RESTful APIs, JSON</li>
+              <li><strong>Projects:</strong>
+                  <ul>
+                      <li>E-commerce Website</li>
+                      <li>Blogging Platform</li>
+                      <li>Weather Forecast Web App</li>
+                  </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="skills-category">
+            <h3>Competitive Programming</h3>
+            <ul>
+              <li><strong>Programming Languages:</strong> Python, C++, Java</li>
+              <li><strong>Data Structures:</strong> Arrays, Linked Lists, Trees, Graphs, Stacks, Queues</li>
+              <li><strong>Algorithms:</strong> Sorting, Searching, Dynamic Programming, Graph Algorithms, Greedy</li>
+              <li><strong>Platforms:</strong> LeetCode, Codeforces, HackerRank</li>
+              <li><strong>Achievements:</strong> 
+                  <ul>
+                      <li>LeetCode: Solved over 200 problems</li>
+                      <li>Codeforces: Rated 1500+</li>
+                  </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      
+<!-- -------------------------------- -->
+
+<section id="contact" class="contact-section">
+    <h2>Get In Touch</h2>
+    <div class="contact-container">
+        <div class="contact-item">
+            <h3>Email</h3>
+            <p><a href="mailto:your.email@example.com" target="_blank">your.email@example.com</a></p>
+        </div>
+        <div class="contact-item">
+            <h3>Resume</h3>
+            <p><a href="link_to_your_resume.pdf" target="_blank">Download Resume</a></p>
+        </div>
+        <div class="contact-item">
+            <h3>LinkedIn</h3>
+            <p><a href="https://www.linkedin.com/in/yourlinkedin/" target="_blank">Connect with me</a></p>
+        </div>
+        <div class="contact-item">
+            <h3>Instagram</h3>
+            <p><a href="https://www.instagram.com/yourusername/" target="_blank">Follow me</a></p>
+        </div>
+        <div class="contact-item">
+            <h3>YouTube</h3>
+            <p><a href="https://www.youtube.com/channel/yourchannel" target="_blank">Watch my videos</a></p>
+        </div>
+        <div class="contact-item">
+            <h3>GitHub</h3>
+            <p><a href="https://github.com/yourgithub" target="_blank">Explore my work</a></p>
+        </div>
+        <div class="contact-item">
+            <h3>LeetCode</h3>
+            <p><a href="https://leetcode.com/yourleetcode/" target="_blank">Solve with me</a></p>
+        </div>
+        <div class="contact-item">
+            <h3>Kaggle</h3>
+            <p><a href="https://www.kaggle.com/yourkaggle" target="_blank">Data Science Projects</a></p>
+        </div>
+    </div>
+</section>
+
+<!-- ---------------------------- -->
+
+    <script src="script.js"></script>
 </body>
 </html>
